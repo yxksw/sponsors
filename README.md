@@ -53,6 +53,7 @@ python -m http.server 8080
 | `date` | string | ✅ | 赞助日期，格式 `YYYY-MM-DD` |
 | `amount` | string | ✅ | 赞助金额，如 `¥50`、`$10` |
 | `avatar` | string | ❌ | 头像图片 URL |
+| `url` | string | ❌ | 个人网站或社交链接 |
 
 ---
 

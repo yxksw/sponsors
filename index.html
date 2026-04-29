@@ -332,6 +332,21 @@
         .sponsor-date {
             font-size: 0.75rem;
             color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+
+        .sponsor-url {
+            font-size: 0.7rem;
+        }
+
+        .sponsor-url a {
+            color: var(--accent-color);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .sponsor-url a:hover {
+            text-decoration: underline;
         }
 
         .sponsor-amount {
@@ -587,6 +602,7 @@
                     <div class="sponsor-info">
                         <div class="sponsor-name">${escapeHtml(sponsor.name)}</div>
                         <div class="sponsor-date">${escapeHtml(sponsor.date)}</div>
+                        ${sponsor.url ? `<div class="sponsor-url"><a href="${escapeHtml(sponsor.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sponsor.url)}</a></div>` : ''}
                     </div>
                     <div class="sponsor-amount">${escapeHtml(sponsor.amount)}</div>
                 </div>
